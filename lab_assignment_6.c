@@ -8,8 +8,8 @@ int search(int numbers[], int low, int high, int value)
         return -1;
     }
     // find the mid index
-    int mid = (low + high) / 2;
-
+    int mid = low + (high - low) / 2;
+	
     if (numbers[mid] == value)
     {
         return mid;
